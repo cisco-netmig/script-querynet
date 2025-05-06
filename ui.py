@@ -199,8 +199,10 @@ class Ui_Form:
         bubble.setContentsMargins(5, 5, 5, 5)
         bubble.setText(f"<b>{sender}</b>: {message}")
         bubble.setStyleSheet("border: 1px solid rgba(80, 180, 255, 80); border-radius: 5px; padding: 5px;")
-
         self.chat_layout.addWidget(bubble)
+
+        self.chat_content_widget.adjustSize()
+        self.scroll_area.ensureWidgetVisible(bubble)
         QtCore.QTimer.singleShot(0, lambda: self.scroll_area.verticalScrollBar().setValue(
             self.scroll_area.verticalScrollBar().maximum()))
 
