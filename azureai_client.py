@@ -174,6 +174,7 @@ class AzureAIClient:
                     margin: 10px 0;
                 }}
                 th, td {{
+                    border: 1px solid #d0d7de;
                     padding: 6px 13px;
                     text-align: left;
                 }}
