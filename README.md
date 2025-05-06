@@ -1,5 +1,4 @@
 ![Project Logo](./__icon__.ico)
-
 # Querynet
 
 ## Overview  
