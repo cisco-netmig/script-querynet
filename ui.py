@@ -82,6 +82,15 @@ class EnvEditorDialog(QtWidgets.QDialog):
         # Text edit for .env file content
         self.text_edit = QtWidgets.QTextEdit(self)
         self.text_edit.setStyleSheet("border:none;")
+        self.text_edit.setPlaceholderText(
+            'AZURE_CLIENT_ID="your-client-id"\n'
+            'AZURE_CLIENT_SECRET="your-client-secret"\n'
+            'AZURE_TOKEN_URL="https://login.microsoftonline.com/your-tenant-id/oauth2/v2.0/token"\n'
+            'AZURE_APP_KEY="your-app-key"\n'
+            'AZURE_ENDPOINT="https://your-resource-name.openai.azure.com/"\n'
+            'AZURE_API_VERSION="2023-05-15"\n'
+            'AZURE_MODEL="gpt-35-turbo"\n'
+        )
         self.highlighter = EnvSyntaxHighlighter(self.text_edit.document())
         layout.addWidget(self.text_edit)
 
