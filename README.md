@@ -24,3 +24,6 @@
 
 ## Tags  
 `#NetworkAutomation` `#AzureAI` `#Netmig` `#NetworkMigration` `#Diagnostics` `#Automation` `#NetworkCommands` `#DeviceLogs` `#AI` `#AzureIntegration` `#ThreadedExecution`
+
+## Screenshots
+![Project Logo](./SCREENSHOT.png)
